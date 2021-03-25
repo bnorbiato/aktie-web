@@ -1,0 +1,221 @@
+/* Header style*/
+header {
+    width: 100%;
+    padding: 15px 0;
+    z-index: 20;
+}
+
+header .aktie-header-desktop {
+    display: flex;
+}
+
+header .aktie-header-desktop .aktie-logo {
+    display: inline-block;
+}
+
+header .aktie-header-desktop .aktie-menu {
+    display: inline-block;
+    position: relative;
+    padding-top: 18px;
+}
+
+header .aktie-header-desktop .aktie-menu ul li a::after, header .aktie-header-desktop .aktie-support ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: #03abe1;
+    transition: transform 0.3s;
+}
+
+header .aktie-header-desktop .aktie-menu ul li a:hover, header .aktie-header-desktop .aktie-support ul li a:hover {
+    color: #03abe1;
+    transition: all 280ms ease-in-out;
+}
+
+header .aktie-header-desktop .aktie-menu ul li a:hover::after, header .aktie-header-desktop .aktie-support ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+header .aktie-header-desktop .aktie-menu .left-links, header .aktie-header-desktop .aktie-support .right-links {
+	display: inline-block;
+}
+
+header .aktie-header-desktop .aktie-menu .left-links li, header .aktie-header-desktop .aktie-support .right-links li {
+    position: relative;
+	display: inline-block;
+	padding: 0 22px;
+}
+
+header .aktie-header-desktop .aktie-menu .left-links li a, header .aktie-header-desktop .aktie-support .right-links li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header .aktie-header-desktop .aktie-support, header .aktie-header-desktop .aktie-menu-toggle {
+    padding-top: 18px;
+}
+
+header .aktie-header-desktop .aktie-support .right-links::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 1px;
+    background-color: #626366;
+}
+
+header .aktie-header-desktop .aktie-support .right-links li i {
+    font-size: 20px;
+}
+
+/* menu responsive style */
+
+header .akite-header-mobile {
+    display: none;
+}
+
+header .akite-header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    z-index: 3;
+  }
+  
+header .akite-header-mobile ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+  
+header .akite-header-mobile li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+  
+header .akite-header-mobile li a:hover, header .akite-header-mobile .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+  
+header .akite-header-mobile .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+  
+/* menu */
+  
+header .akite-header-mobile .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+  
+/* menu icon */
+  
+header .akite-header-mobile .menu-icon {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-top: 7px;
+    padding: 28px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+  
+header .akite-header-mobile .menu-icon .navicon {
+    display: block;
+    height: 2px;
+    position: relative;
+    background: #00aae2;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+  
+header .akite-header-mobile .menu-icon .navicon:before, header .akite-header-mobile .menu-icon .navicon:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    background: #00aae2;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+  
+header .akite-header-mobile .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+header .akite-header-mobile .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+/* menu button */
+  
+header .akite-header-mobile .menu-btn {
+    display: none;
+}
+  
+header .akite-header-mobile .menu-btn:checked ~ .menu {
+    max-height: 380px;
+}
+  
+header .akite-header-mobile .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+header .akite-header-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+  
+header .akite-header-mobile .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+header .akite-header-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, header .akite-header-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+  
+/* responsive */
+  
+ @media (min-width: 48em) {
+    header .akite-header-mobile li {
+      float: left;
+    }
+
+    header .akite-header-mobile li a {
+      padding: 20px 30px;
+    }
+    header .akite-header-mobile .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    header .akite-header-mobile .menu-icon {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .aktie-header-desktop {
+        display: none;
+    }
+
+    header .akite-header-mobile {
+        display: block;
+    }
+}
+  

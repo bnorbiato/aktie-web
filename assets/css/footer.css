@@ -1,0 +1,121 @@
+/* Footer style */
+footer {
+    display: block;
+}
+
+footer .footer-menus {
+    display: inline-flex;
+}
+
+footer .footer-menus p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer .aktie-logo-footer .links-social-media {
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .footer-menus ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer .footer-menus ul li {
+    padding: 10px 0;
+}
+
+footer .footer-menus ul li a {
+    color: white;
+    font-size: 12px;
+}
+
+footer .footer-menus ul li a:hover, footer .footer-menus .first-col .links-social-media a i:hover {
+    color: #03abe1;
+    transition: all 280ms ease-in-out;
+}
+
+footer .footer-menus .first-col {
+    display: inline-flex;
+    padding: 100px 50px 40px 150px;
+    background-color: #222222;
+}
+
+footer .footer-menus .first-col .menu-about {
+    padding-left: 120px;
+}
+
+footer .footer-menus .first-col .links-social-media a i, footer .footer-bar-mobile .links-social-media-mobile a i {
+    padding: 5px;
+    color: white;
+    font-size: 17px;
+}
+
+footer .footer-menus .second-col {
+    padding: 100px 30px 40px;
+    background-color: #383838;
+}
+
+footer .footer-menus .third-col {
+    padding: 100px 30px 40px;
+    background-color: #565656;
+}
+
+footer .footer-menus .fourth-col {
+    padding: 100px 370px 40px 50px;
+    background-color: #686868;
+}
+
+footer .footer-menus .fourth-col ul li p {
+    font-size: 12px;
+    text-transform: none;
+}
+
+footer .footer-bar-mobile {
+    display: none;
+}
+
+footer .footer-bar-mobile .scrollup {
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: -30px auto 0;
+    background: #00aae2;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+footer .footer-bar-mobile .scrollup i {
+    vertical-align: middle;
+    margin-bottom: -5px;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    footer .footer-menus {
+        display: none;
+    }
+
+    footer .footer-bar-mobile {
+        display: block;
+        padding: 10px 20px;
+        background-color: #222222;
+    }
+
+    footer .footer-bar-mobile .links-social-media-mobile {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    footer .footer-bar-mobile .links-social-media-mobile a i {
+        padding: 5px 9px;
+        font-size: 18px;
+    }
+}

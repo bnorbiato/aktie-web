@@ -1,0 +1,95 @@
+/* Contact style */
+.Contact {
+    padding: 50px 0 50px;
+}
+
+.Contact .aktie-form {
+    margin: 30px auto;
+    padding-left: 110px;
+}
+
+.Contact form label {
+    display: inline-grid;
+    width: 40%;
+    margin: 20px 20px 20px 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: #626366;
+}
+
+.Contact .logradouro {
+    width: 100%;
+}
+
+.Contact .logradouro .rua {
+    width: 60%;
+}
+
+.Contact .logradouro .numero {
+    width: 20%;
+}
+
+.Contact input {
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid #efefef;
+    border-radius: 0;
+}
+
+.Contact button {
+    padding: 10px;
+    margin: 20px auto;
+    color: #00aae2;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #00aae2;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.Contact button:hover {
+    color: white;
+    border: 1px solid #00aae2;
+    background-color: #00aae2;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+    .Contact {
+        padding: 0 0 30px;
+    }
+    
+    .Contact .aktie-form {
+        padding-left: 0;
+    }
+
+    .Contact form, .Contact .logradouro {
+        display: grid;
+    }
+
+    .Contact form {
+        width: 460px
+    }
+
+    .Contact form label {
+        margin: 15px 0;
+    }
+
+    .Contact form label input {
+        width: 330px;
+    }
+
+    .Contact .logradouro .rua input, .Contact .logradouro .numero input {
+        display: block;
+        width: 330px;
+    }
+
+    .Contact button {
+        margin: 10px 10px 10px 30px;
+        width: 270px;
+    }
+
+}
